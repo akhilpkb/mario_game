@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin:0;
+    overflow-x: hidden;
+    
+}
+#game{
+    width: 900px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    background-image: url("mario-background.jpg");
+    background-size: 900px 500px;
+}
+
+#character{
+    width: 80px;
+    height: 120px;
+    /* background-color: chartreuse; */
+    position: relative;
+    top: 330px;
+    background-image: url("mario3.png");
+    background-size: 80px 120px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {top: 330px;}
+    30% {top: 230px;}
+    70% {top: 230px;}
+    100% {top: 330px;}
+}
+#block{
+    width: 70px;
+    height:60px;
+    /* background-color:red; */
+    position: relative;
+    top: 270px;
+    left: 850px;
+    animation: block 1s infinite linear;
+    background-image: url("cactus2.png");
+    background-size: 80px 80px;
+}
+
+@keyframes block{
+    0%{left: 850px;}
+    100%{left:-50px}
+}
+
+h2 {
+    text-align: center;
+    padding-top: 50px;
+}
